@@ -1,0 +1,30 @@
+
+done:
+1- shuffle the cards
+
+- show all the cards for 1s then flip back
+
+2- on click show the card
+
+you can't flip more then two cards
+3- compare the two cards 
+4- check if brand attribute is the same
+5- if  brand attribute is the same :  true 
+                                    keep the cards on back(image appear)
+                                    +1
+6- if  brand attribute is not the same : false
+                                    flip back the cards
+                                    increase number of tries
+                                    7- set fail case:
+                                    
+        if number of tries more than 20 (or any chosen number) the user lose
+8- set win case:
+        check if all the cards are flipped
+        if so you win
+
+
+steps:
+- ask the user to write their name 
+- set hello(username)
+
+

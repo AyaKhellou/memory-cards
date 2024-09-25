@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.start-page{
+    background-color: #144e5fc5;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 10;
+}
+.start-page .start{
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%,50%);
+    width: 500px;
+    height: 150px;
+    background-color: #45816d;
+    color: white;
+    font-weight: bold;
+    font-size: 70px;
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+.start-page .start:hover{
+    background-color: #2f8a6b;
+    
+}
+.container{
+    background-color: #eee;
+    width: 70%;
+    height: 600px;
+    margin: 20px auto;
+}
+.container .info-bar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    background-color: #f7f6f6;
+    border-bottom: 2px solid #b8b6b6;
+}
+.container .game-blocks{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content:space-evenly;
+    align-content: space-evenly;
+    height: 540px;
+}
+.container .game-blocks.no-clicking{
+    pointer-events: none;
+}
+.container .game-blocks .block{
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    perspective: 300px;
+    background-color: transparent;
+    position: relative;
+    transform-style: preserve-3d;
+    transition-duration: 1s;
+}
+.container .game-blocks .block .face{
+    position: absolute;
+    background-color: #144d5f;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backface-visibility: hidden;
+
+}
+.container .game-blocks .block .back {
+    transform: rotateY(180deg);
+}
+.container .game-blocks .block .back i{
+    pointer-events: none;
+}
+.myStyle{
+    transform: rotateY(180deg);
+}
+.game-result{
+    visibility: hidden;
+    background-color: white;
+    width: 500px;
+    height: 300px;
+    font-size: 30px;
+    font-weight: bold;
+    position: fixed;
+    top: 170px;
+    right: 450px;
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transform: 1s ease;
+    transform-origin: 50% 50%;
+    .icon{
+        font-size: 70px;
+    }
+    .button{
+        background-color: #2f8a6b;
+        padding: 10px 20px;
+        font-size: 20px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .button:hover{
+        background-color: #29755c;
+    }
+}
+.game-result.fail{
+    visibility: visible;
+}
+
+.game-result.win{
+    visibility: visible;
+}
