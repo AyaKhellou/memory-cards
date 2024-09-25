@@ -1,4 +1,4 @@
-//settings:
+//settings
 let cards = document.querySelectorAll('.block');
 let blockConatainer = document.querySelector(".game-blocks");
 let start = document.querySelector(".start-page .start");
