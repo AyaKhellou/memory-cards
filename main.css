@@ -6,7 +6,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 .start-page{
-    background-color: #144e5fc5;
+    background-color: #4d4d4d54;
     width: 100%;
     height: 100%;
     position: fixed;
@@ -19,22 +19,20 @@ body{
     transform: translate(50%,50%);
     width: 500px;
     height: 150px;
-    background-color: #45816d;
-    color: white;
+    background-color: #fefed8;
+    color: #454545;
     font-weight: bold;
-    font-size: 70px;
+    font-size: 59px;
     cursor: pointer;
-    border: 2px solid white;
-    border-radius: 10px;
+    border: 2px solid #4d4d4d;
+    border-radius: 79px;
 }
 .start-page .start:hover{
-    background-color: #2f8a6b;
+    background-color: #ececa6;
     
 }
 .container{
-    background-color: #eee;
     width: 70%;
-    height: 600px;
     margin: 20px auto;
 }
 .container .info-bar{
@@ -42,15 +40,18 @@ body{
     justify-content: space-around;
     align-items: center;
     padding: 15px;
-    background-color: #f7f6f6;
-    border-bottom: 2px solid #b8b6b6;
+    background-color: #e1efa5;
+    border-radius: 30px;
+    margin-bottom: 20px;
 }
 .container .game-blocks{
     display: grid;
     grid-template-columns: auto auto auto auto;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     align-content: space-evenly;
     height: 540px;
+    background-color: #c6de9d;
+    border-radius: 30px;
 }
 .container .game-blocks.no-clicking{
     pointer-events: none;
@@ -67,7 +68,7 @@ body{
 }
 .container .game-blocks .block .face{
     position: absolute;
-    background-color: #144d5f;
+    background-color: #fdf0f5;
     font-weight: bold;
     font-size: 50px;
     text-align: center;

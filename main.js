@@ -40,8 +40,6 @@ start.onclick = ()=>{
     flip();
 }
 
-
-
 //add question mark on all cards
 function questionMarks() {
     let front = document.querySelectorAll(".face.front");
@@ -138,14 +136,14 @@ function stopClicking(){
 //check if two cards similar
 function checkCards(selectedCards){
 
-    //get cards brand attr
+    //get cards fruit attr
     let arr = Array.from(selectedCards).map(card => {
 
-        return card.getAttribute("brand");
+        return card.getAttribute("fruit");
         
     });
 
-    //check if the two brands are the same
+    //check if the two fruits are the same
 
     setTimeout(() => {
 
